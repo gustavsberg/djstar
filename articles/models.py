@@ -6,7 +6,7 @@ class Article(models.Model):
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
     #auth
-    #thumb = models.
+    thumb = models.ImageField(default='image.png', blank=True)
 
     def __str__(self):
         return self.title
@@ -15,4 +15,4 @@ class Article(models.Model):
         if len(self.body)>40:
             return self.body[:40] + '...'
         else:
-            return self.body    
+            return self.body

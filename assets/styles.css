@@ -42,11 +42,22 @@ header{
 
 nav{
     justify-self:end;
+    padding: 35px;
 }
 
 nav li{
     display:inline-block;
-    margin-left:20px;
+    margin-left:40px;
+    font-size: 1.4em;
+
+}
+
+nav p{
+    text-align:center;
+    color: #6197f1;
+    font-size: 1.4em;
+    margin-left:15px;
+
 }
 
 nav button{
@@ -105,22 +116,25 @@ nav button{
 }
 
 .site-form{
+    display: flex;
+    flex-direction: column;
     margin-top: 60px;
-    border: 1px solid #00dba0;
+    border: 2px solid #6197f1;
+    border-radius: 3px;
     padding: 20px;
 }
 
 .site-form input, site-form textarea{
-    display: block;
-    margin: 20px 0 0 0;
     padding: 10px;
+    margin: 20px 0 0 0;
 }
 
 a.highlight{
-    border: 1px solid #00dba0;
+    border: 1px solid #6197f1;
+    background-color: #142141;
     padding: 10px;
     border-radius: 4px;
-    color: #00dba0;
+    color: #6197f1;
 }
 .helptext, .helptext ul{
     margin: 0 20px auto;
@@ -142,10 +156,10 @@ a.highlight{
 }
 
 .site-form input[type="submit"]{
-    background: #00dba0;
-    border: 0;
-    color: #fff;
+    background: #142141;
+    border: 1px solid #6197f1;
+    color: #6197f1;
     font-size: 1.2em;
-    border-radius: 4px;
+    border-radius: 3px;
     margin: 10px 0;
 }

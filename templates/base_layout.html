@@ -23,9 +23,13 @@
                             </form>
                         </li>
                         <li>
-                            <a href="{% url 'articles:create' %}">New Article</a>
+                            <a href="{% url 'articles:create' %}" class="highlight">New Article + </a>
                         </li>
                     {% else %}
+                        <p>
+                            You entered as guest</br>
+                            Please Signup or Login
+                        </p>
                         <li>
                             <a href="{% url 'accounts:login' %}">Login</a>
                         </li>

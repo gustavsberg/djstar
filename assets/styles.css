@@ -1,8 +1,13 @@
 body{
     background-color: #0f121f;
-    background-image: url(stars.jpg);
+    /* background-image: url(stars.jpg); */
     background-repeat: no-repeat;
     color: #fff;
+
+}
+
+main{
+    background-image: url(stars.jpg);
 }
 
 body *{
@@ -32,6 +37,25 @@ div.wrapper h1{
     text-align:center;
     margin:100px auto;
     font-size:3em;
+}
+
+.footer{
+    position: static;
+    left: 0; bottom: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #142141;
+    color: #fff;
+    width: 100%;
+}
+
+.footer .footer-text{
+    color: #6197f1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 2em;
+
 }
 
 header{
@@ -80,6 +104,7 @@ nav button{
     border-radius: 4px;
     position:relative;
     padding-bottom:40px;
+    text-align: center;
 }
 
 .article h2{
@@ -163,3 +188,13 @@ a.highlight{
     border-radius: 3px;
     margin: 10px 0;
 }
+
+/* .png{
+    margin: 0 auto;
+    align-items: center;
+}
+
+.article{
+    align-items: center;
+    margin:0 auto;
+} */

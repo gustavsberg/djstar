@@ -5,27 +5,29 @@
     <head>
         <meta charset="utf-8">
         <title>Djstar</title>
-        <link rel="stylesheet"href="{% static 'styles.css' %}"
+        <link rel="stylesheet" href="{% static 'styles.css' %}" />
+        <script src="https://kit.fontawesome.com/882300d7a8.js"></script>
     </head>
     <body>
-        <header class="wrapper">
-            <h1><a href="{% url 'home' %}"><img src="{% static 'logo_transparent.png' %}" /></a></h1>
-            <nav>
-                <ul>
-                    {% if user.is_authenticated %}
-                        <p>
-                            Welcome, {{ user.username }}
-                        </p>
-                        <li>
-                            <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
-                                {% csrf_token %}
-                                <button type="submit">Logout</button>
-                            </form>
-                        </li>
-                        <li>
+        <main>
+            <header class="wrapper">
+                <h1><a href="{% url 'home' %}"><img src="{% static 'logo_transparent.png' %}" /></a></h1>
+                <nav>
+                    <ul>
+                        {% if user.is_authenticated %}
+                            <p>
+                                Welcome, {{ user.username }}
+                            </p>
+                            <li>
+                                <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+                                    {% csrf_token %}
+                                    <button type="submit">Logout</button>
+                                </form>
+                            </li>
+                            <li>
                             <a href="{% url 'articles:create' %}" class="highlight">New Article + </a>
                         </li>
-                    {% else %}
+                        {% else %}
                         <p>
                             You entered as guest</br>
                             Please Signup or Login
@@ -36,13 +38,20 @@
                         <li>
                             <a href="{% url 'accounts:signup' %}">Signup</a>
                         </li>
-                    {% endif %}
-                </ul>
-            </nav>
-        </header>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </header>
         <div class="wrapper">
             {% block content %}
             {% endblock %}
         </div>
+        </main>
+        <footer class="footer">
+            <a href="{% url 'about' %}" class="footer-text"><i class="fas fa-chevron-right">About author</i></a>
+            <!-- <a class href="https://www.linkedin.com/in/ihorkononenko148/?locale=en_US" class="footer-link">link</a> -->
+            <a class="footer-text" href="https://www.linkedin.com/in/ihorkononenko148/?locale=en_US" ><i class="fab fa-linkedin fa-2x"></i></a>
+        </footer>
     </body>
+
 </html>

@@ -1,8 +1,117 @@
-{% extends 'base_layout.html' %}
+{% load static from staticfiles %}
 
-{% block content %}
-    <h1>Info about me</h1>
-    <p>
-        i know
-    </p>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="font/fontawesome/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Gudea|Lalezar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'style_about.css' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About author</title>
+</head>
+<body class="body">
+  <div class="main-wrapper">
+    <div class="left-box">
+      <header class="header">
+        <i class="far fa-lightbulb"></i>
+        <i class="far fa-lightbulb"></i>
+        <i class="far fa-lightbulb"></i>
+        <h1 class="title">Hello!<br>I am Ihor Kononenko<br>Junior Python developer</h1>
+      </header>
+      <section class="first-section">
+        <div class="section-header">
+          <h1 class="section-title">Purpose</h1>
+        </div>
+        <div class="section-flex">
+          <h3 class="flex-item">Junior Python developer with 1 year of experience and strong desire to grow and develop. Have a friendly demeanor and tend to be very organized. With the capacity to adapt and learn fast. Constantly pass online IT-courses, do small projects and practise on Checkio (Python 3).The main goal is to deliver the best results in short time. </h3>
+          <!-- <h3 class="flex-item"> Have a friendly demeanor and tend to be very organized.</h3>
+          <h3 class="flex-item">Learn to fast Constantly pass online IT courses, small projects and practice on Checkio (Python The best results in short time.</h3> -->
+        </div>
+      </section>
+      <section class="skills">
+        <div class="box">
+          <div class="section-header">
+            <h1 class="section-title">Skills</h1>
+          </div>
+          <ul class="row">
+          <li class="row-item">Pyhton 3, Django</li>
+          <li class="row-item">Experience in writing and editing code in C# | C++ | CSS | HTML 5</li>
+          <li class="row-item">Basic knowledge of Bootstrap 4 | GIT | MySQL | SQLite</li>
+          <li class="row-item">Interpersonal skills</li>
+          <li class="row-item">Multitasking</li>
+          <li class="row-item">Time management</li>
+          <li class="row-item">Logical thinking & Problem solving</li>
+          </ul>
+        </div>
+      </section>
+      <section class="sertificate">
+        <div class="section-header">
+          <h1 class="section-title">Sertificates</h1>
+        </div>
+        <div class="row row_left">
+        <a class="row-left" href="https://stepik.org/cert/167613">Programming on Python </a>
+        <a class="row-left" href="https://stepik.org/cert/198292">Python: basics and application </a>
+        </div>
+
+      </section>
+      <section class="education">
+        <div class="section-header">
+          <h1 class="section-title">Education</h1>
+        </div>
+        <div class="row">
+          <h3 class="row-item">2016-2020: State University of Telecommunications (SUT), Kiev
+              Educational-scientific Institute of Information security</h3>
+          <h3 class="row-item">2016-2020: State University of Telecommunications (SUT), Kiev
+              Educational-scientific Institute of Information security</h3>
+          <h3 class="row-item"> - C#</h3>
+          <h3 class="row-item"> - Applied Cryptology</h3>
+        </div>
+      </section>
+      <section class="expirience">
+        <div class="box">
+          <div class="section-header">
+            <h1 class="section-title">Employment experience</h1>
+            <h2 class="section-subtitle">Technical support agent|Freenet Ltd.</h2>
+          </div>
+          <ul class="row">
+          <li class="row-item">Assistance to customers in setting up network equipment, receiving and processing in a telephone mode, contacting subscribers, advising subscribers on technical issues that are provided while using Internet services.</li>
+          <li class="row-item">Providing help with remote configuring network devices</li>
+        </ul>
+        </div>
+      </section>
+      <section class="languages">
+        <div class="box">
+          <div class="section-header">
+            <h1 class="section-title">Languages</h1>
+            <h2 class="section-subtitle">English - upper intermediate</h2>
+            <h2 class="section-subtitle">Russian - native</h2>
+            <h2 class="section-subtitle">Ukraine - native</h2>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="box">
+          <div class="section-header">
+            <h1 class="section-title">More info</h1>
+          </div>
+          <div class="row">
+            <a class="section-subtitle section-subtitle_mod" href="https://github.com/gustavsberg">GitHub repository</a>
+        </div>
+
+        </div>
+        <div class="row">
+          <h1 class="row-item">hainsgud@gmail.com</h1>
+          <h1 class="row-item">linkedin.com/in/ihorkononenko148</h1>
+          <h1 class="row-item">+38(099)555-39-42</h1>
+          <h1 class="row-item ">Kyiv</h1>
+      </div>
+      <a class="btn" href="{% url 'home' %}">Home</a>
+      </section>
+    </div>
+  </div>
+  <footer>
+  </footer>
+</body>
+</html>

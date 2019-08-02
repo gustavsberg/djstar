@@ -13,3 +13,5 @@ Also it is possible to attach an image to the article. During creating this blog
 
 
 (Additional information about the author can be found in the footer by clicking "About the author")
+
+Hosted on PythonAnywhere: https://gustavsberg.pythonanywhere.com
